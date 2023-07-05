@@ -1,0 +1,240 @@
+.main-form {
+  width: 100%;
+
+  .form-section:last-child {
+    .section-wrapper {
+      padding-bottom: 0.1px; // clearfix
+    }
+  }
+
+  .text-statements {
+    padding: 24px;
+    margin-bottom: 0px;
+  }
+
+  .form-content {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 1px 2px 8px 2px rgba(100, 100, 100, 0.08);
+    border-radius: 4px;
+    padding: 24px;
+    padding-bottom: 0px;
+
+    .form-header {
+      margin-bottom: 30px;
+    }
+
+    .form-section {
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .section-header {
+        display: flex;
+        margin-bottom: 12px;
+        border-bottom: 1px solid $lineColor;
+        .section-title {
+          font-size: 16px;
+          color: $secondaryTextColor;
+          flex: 1;
+          margin-bottom: 8px;
+        }
+
+        .btn-clear {
+          color: $redColor;
+          font-family: $fontBold;
+          font-size: 14px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            width: 18px;
+            height: 18px;
+            margin-right: 5px;
+          }
+
+          &:focus {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    .ant-picker {
+      width: 100%;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .ant-form-item {
+      margin-bottom: 24px;
+      .ant-form-item {
+        margin-bottom: 0px;
+      }
+    }
+
+    .has-check-box {
+      .ant-form-item {
+        margin-bottom: 16px;
+        .ant-form-item {
+          margin-bottom: 0px;
+        }
+      }
+    }
+
+    .ant-divider {
+      border-top: 1px solid $lineColor;
+      margin: 0px;
+      margin-bottom: 16px;
+    }
+
+    .text-total {
+      display: flex;
+      text-align: right;
+      font-size: 16px;
+      p {
+        font-family: $fontBold;
+        width: 75%;
+        padding: 0 15px;
+        margin-bottom: 0px;
+        color: $textColor;
+      }
+
+      span {
+        width: 30%;
+        color: $grayColor;
+      }
+    }
+
+    .ant-checkbox-wrapper,
+    .ant-radio-group {
+      height: 40px;
+    //   display: flex;
+    //   align-items: center;
+
+      .ant-checkbox {
+        top: 0;
+      }
+    }
+
+    .ant-form-item-control {
+      color: #000000;
+    }
+
+    .ant-form-item-control-input {
+      min-height: unset;
+    }
+
+    .title,
+    .sub-title {
+      text-align: center;
+    }
+
+    .title {
+      font-size: 18px;
+    }
+
+    .sub-title {
+      font-size: 12px;
+      color: $secondaryTextColor;
+      margin-top: 8px;
+    }
+    .ant-input-number {
+      width: 100%;
+      .ant-input-number-handler-wrap {
+        display: none;
+      }
+      .ant-input-number-input {
+        height: 38px;
+      }
+    }
+
+    .ant-form-item-control-input-content span {
+      &.control-span {
+        margin-right: 10px;
+        color: #7a7774;
+      }
+    }
+
+    .form-list {
+      margin-bottom: 22px;
+      .ant-form-item-control-input-content {
+        span.form-list-action {
+          position: absolute;
+          right: 0px;
+          top: -30px;
+          .btn-clear {
+            width: 24px;
+            height: 24px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff7f7;
+            border-radius: 4px;
+          }
+        }
+      }
+      .ant-form-item {
+        margin-bottom: 0px;
+        .ant-form-item {
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    .ant-upload {
+      // max-width: 388px;
+    }
+
+    .upload-item {
+      width: 100%;
+      // max-width: 388px;
+      // margin-top: 0;
+    }
+  }
+
+  .list-item-wrapper {
+    flex-flow: column;
+  }
+}
+
+.form-list-item {
+  &:not(:last-child) {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.advance-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 24px;
+
+  .search-box {
+    flex: 1;
+    max-width: 300px;
+
+    &.ant-row {
+      margin-top: 0px !important;
+    }
+
+    .input-search {
+      border-radius: 4px;
+      padding-top: 3px;
+      font-size: 12px;
+    }
+  }
+
+  .advance-search-button {
+    font-weight: bold;
+    font-size: 12px;
+    color: #e3253c;
+  }
+}

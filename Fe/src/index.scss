@@ -1,0 +1,896 @@
+@import './App.scss';
+@import 'antd/dist/antd.css';
+@import './scss/antd-custom.scss';
+@import './scss/form.scss';
+
+
+@font-face {
+  font-family: 'OpenSans Bold';
+  src: local('OpenSans Bold'), url(./assets/fonts/OpenSans-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans BoldItalic';
+  src: local('OpenSans BoldItalic'), url(./assets/fonts/OpenSans-BoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans Italic';
+  src: local('OpenSans Italic'), url(./assets/fonts/OpenSans-Italic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans Regular';
+  src: local('OpenSans Regular'), url(./assets/fonts/OpenSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans-ExtraBold';
+  src: local('OpenSans-ExtraBold'), url(./assets/fonts/OpenSans-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans ExtraBoldItalic';
+  src: local('OpenSans ExtraBoldItalic'), url(./assets/fonts/OpenSans-ExtraBoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans Light';
+  src: local('OpenSans Light'), url(./assets/fonts/OpenSans-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans LightItalic';
+  src: local('OpenSans LightItalic'), url(./assets/fonts/OpenSans-LightItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans SemiBold';
+  src: local('OpenSans SemiBold'), url(./assets/fonts/OpenSans-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans SemiBoldItalic';
+  src: local('OpenSans SemiBoldItalic'), url(./assets/fonts/OpenSans-SemiBoldItalic.ttf) format('truetype');
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.blue-text {
+  color: $blueColor;
+}
+
+.text-lighter-black {
+  color: $lighterBlackColor;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+body {
+  font-family: $textFont !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $grayBackgroud !important;
+}
+
+.App {
+  height: 100vh;
+}
+
+.required-symbol {
+  color: $primaryColor !important;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.big-title {
+  font-size: 24px;
+  font-family: $titleFont;
+}
+
+.large-title {
+  font-size: 18px;
+  font-family: $titleFont;
+}
+
+.title {
+  font-size: 16px;
+  font-family: $titleFont;
+}
+
+.sub-title {
+  font-size: 14px;
+  font-family: $fontBold;
+}
+
+.small-title {
+  font-size: 12px;
+  font-family: $titleFont;
+}
+
+.cur {
+  cursor: pointer;
+}
+
+//flex
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between !important;
+}
+
+.justify-right {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+// end flex
+
+.full-width {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
+.invisible {
+  visibility: hidden;
+}
+
+.ellipsis-text {
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $secondaryColor;
+  border: 0px none #ffffff;
+  border-radius: 60px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $secondaryColor;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: $secondaryColor;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.page-title {
+  font-size: 24px;
+  color: $tertiaryColor;
+  margin-bottom: 0;
+}
+
+.page-content {
+  margin-top: 8px;
+}
+
+.textarea-display {
+  white-space: pre-line;
+}
+
+.font-weight-bold {
+  font-family: 'OpenSans Bold';
+}
+
+.btn-normal {
+  font-family: 'OpenSans Bold';
+  color: #1890ff;
+}
+
+.btn-action {
+  font-family: 'OpenSans Bold';
+  color: #67c465;
+}
+
+.btn-danger {
+  font-family: 'OpenSans Bold';
+  color: #e3253c;
+}
+
+.display-editor {
+  img {
+    max-width: 100%;
+  }
+}
+
+.red-color {
+  color: #e3253c;
+}
+
+//spacing
+@each $prop,
+$abbrev in (margin: m, padding: p) {
+  .#{$abbrev}-auto {
+    $prop: auto !important;
+  }
+
+  .#{$abbrev}-0 {
+    $prop: 0 !important;
+  }
+}
+
+//end spacing
+
+//color
+@each $color,
+$value in $theme-colors {
+  .text-#{$color} {
+    color: $value !important;
+  }
+}
+
+.post-details-modal {
+  margin-top: 60px;
+
+  .ant-drawer-content-wrapper {
+    box-shadow: none !important;
+  }
+
+  .ant-drawer-wrapper-body {
+    height: calc(100% - 60px);
+  }
+
+  .ant-drawer-title {
+    text-align: left;
+  }
+
+  .ant-drawer-body {
+    background: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+
+    >div {
+      padding: 24px;
+      background: #fff;
+      border-radius: 4px;
+      width: 100%;
+      flex-grow: 1;
+    }
+  }
+
+  .ant-drawer-footer div {
+    display: block;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.ant-form-item-label label {
+  color: #665C5D;
+}
+
+.align-center {
+  align-items: center !important;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.pv-10 {
+  padding: 10px 0;
+}
+
+.ph-10 {
+  padding: 0 10px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+
+.ant-form-item .ant-mentions,
+.ant-form-item textarea {
+  &.text-area-no-border {
+    height: 200px;
+    border: none;
+
+    &:hover,
+    &:focus {
+      border: none;
+      box-shadow: none
+    }
+  }
+
+  &.text-area-no-border-one {
+    height: 55px;
+    border: none;
+
+    &:hover,
+    &:focus {
+      border: none;
+      box-shadow: none
+    }
+  }
+}
+
+.form-not-style {
+  .ant-form-item-label {
+    label {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 18px;
+      color: #313233;
+      font-family: 'OpenSans Regular'
+    }
+  }
+}
+
+.form-not-style-small {
+  .ant-form-item-label {
+    label {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      color: #313233;
+      font-family: 'OpenSans Regular'
+    }
+  }
+}
+
+.form-custom-label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #303030;
+
+}
+
+.data-list {
+  .list-header {
+    padding-bottom: 10px;
+    .title {
+      font-size: 24px;
+      line-height: 32px;
+      color: #2b2b2b;
+    }
+    .add-new {
+      float: right;
+    }
+    .input-search {
+      border-radius: 4px;
+      padding-top: 3px;
+      font-size: 12px;
+    }
+    .advanced-search {
+      float: right;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      color: #e3253c;
+    }
+    .ant-row {
+      margin-top: 15px;
+    }
+    .ant-select-show-arrow {
+      width: 95%;
+    }
+  }
+  
+}
+
+
+// .reference-check {
+//   .text-important-notes {
+//     font-size: 14px;
+//     line-height: 24px;
+//     padding-bottom: 32px;
+//   }
+//   .ant-form-item {
+//     margin-bottom: 24px !important;
+//   }
+  
+//   // .ant-radio-group {
+//   //   width: 100%;
+//   //   .ant-radio-wrapper {
+//   //     width: 15%;
+//   //   }
+//   // }
+//   .text-statements {
+//     padding: 0 24px 24px 24px;
+//   }
+//   .continue {
+//     margin-top: 24px;
+//   }
+//   .header-action {
+//     display: flex;
+//     justify-content: flex-end;
+//     margin-bottom: 16px;
+
+//     button.ant-btn {
+//       width: 32px;
+//       height: 32px;
+//       padding: 0;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       border: 1px solid #d9d3d3;
+//       box-sizing: border-box;
+//       border-radius: 4px;
+//       background: #f6f6f6;
+
+//       &.edit-btn {
+//         background-color: #fff6f6;
+//       }
+
+//       .icon {
+//         margin: 0;
+//       }
+//     }
+//   }
+// }
+
+// .book-interview {
+//   .ant-drawer-title {
+//     font-family: "OpenSans Bold";
+//     font-size: 16px;
+//     line-height: 24px;
+//     text-align: left;
+//   }
+//   .ant-select-selector {
+//     min-height: 40px;
+//   }
+
+//   .btn-cancel {
+//     background: #ffffff !important;
+//     border-radius: 4px;
+//     border: 1px solid #e3253c !important;
+//     color: #e3253c !important;
+//   }
+// }
+// .modal-reject {
+//   .btn-border {
+//     float: left;
+//   }
+// }
+
+// .offer-letter-drawer {
+//   .ant-drawer-title {
+//     font-family: "OpenSans Bold";
+//     font-size: 16px;
+//     line-height: 24px;
+//     text-align: left;
+//   }
+//   .section-title {
+//     font-size: 16px;
+//     line-height: 22px;
+//     border-bottom: solid #e6e6e6 1px;
+//     padding-bottom: 8px;
+//     margin-bottom: 21px;
+//   }
+//   .text-label {
+//     font-family: "OpenSans SemiBold";
+//     color: #000000;
+//   }
+//   .info-row {
+//     margin-bottom: 20px;
+//   }
+// }
+
+// .writing-test {
+//   padding: 0px;
+//   .duration {
+//     margin-bottom: 20px;
+//     text-align: right;
+//     .text-bold {
+//       font-family: "OpenSans SemiBold";
+//       color: #000000;
+//       font-size: 14px;
+//       margin-left: 5px;
+//     }
+//   }
+//   .result {
+//     span {
+//       padding: 10px;
+//     }
+//   }
+//   .description {
+//     margin-bottom: 20px;
+//   }
+//   .file-template {
+//     height: 64px;
+//     border: 1px dashed #d9d9d9;
+//   }
+//   .btn-submit {
+//     margin-top: 24px;
+//   }
+//   .file-uploadted,
+//   .file-result {
+//     .upload-file {
+//       display: none;
+//     }
+//   }
+
+//   .file-uploadted {
+//     .upload-item {
+//       margin-top: unset;
+//       max-width: unset;
+//       border: 1px dashed #d9d9d9;
+//     }
+//   }
+
+//   table {
+//     display: table;
+//     table-layout: auto !important;
+//     border: 1px solid #ccc;
+//     width: 100%;
+//     max-width: 100%;
+//     margin: 0 0 10px;
+//     background-color: transparent;
+//     border-spacing: 0;
+//     border-collapse: collapse;
+//   }
+//   tr {
+//     border: 1px solid #efefef;
+//   }
+//   td {
+//     border: 1px solid #e1e1e1;
+//     padding: 0.4em;
+//     background-clip: padding-box;
+//   }
+// }
+// .writing-test,
+// .extra-information-view {
+//   .text-label {
+//     font-family: "OpenSans Bold";
+//     color: #000000;
+//     margin: 12px 0;
+//   }
+//   s .text-infor {
+//     font-size: 14px;
+//     line-height: 24px;
+//   }
+//   .form-content {
+//     background: #ffffff;
+//     padding: 30px 24px !important;
+//   }
+
+//   .q-title {
+//     p {
+//       display: inline;
+//     }
+//   }
+// }
+
+// .offer-letter-review {
+//   .title {
+//     font-size: 24px;
+//     font-family: "OpenSans Bold";
+//     margin-top: 24px;
+//   }
+//   .form-content {
+//     background-color: #ffffff;
+//     padding: 24px !important;
+//     .avatar-title {
+//       position: absolute;
+//       bottom: 0;
+//       left: 26px;
+//     }
+//   }
+//   .infor {
+//     .basic-infor {
+//       line-height: 30px;
+//       font-size: 14px;
+//     }
+//     .text-label {
+//       font-family: "OpenSans Bold";
+//       color: #000000;
+//     }
+//     .text-infor,
+//     .text-label {
+//       margin-bottom: 13px;
+//       margin-top: 13px;
+//     }
+//     .ant-table-content {
+//       th,
+//       td:first-child {
+//         font-family: "OpenSans Bold";
+//         color: #000000;
+//       }
+//     }
+//   }
+//   .right {
+//     text-align: right;
+//     .date {
+//       position: absolute;
+//       bottom: 0;
+//       right: 0;
+//     }
+//   }
+//   .status {
+//     font-family: "OpenSans Bold";
+//     color: #f0723c;
+//   }
+//   .comment-user {
+//     padding: 0 10px 0 2px;
+//   }
+//   .comment-container {
+//     padding: 10px 0;
+//     .comment-text {
+//       padding: 12px;
+//       background: #f6f6f6;
+//       border-radius: 4px;
+//       margin: 6px 0;
+//     }
+//   }
+//   .actions {
+//     margin-top: 100px;
+//   }
+// }
+
+// .interview-assessment {
+//   .header-title {
+//     color: #4c75df;
+//     font-size: 16px;
+//     line-height: 22px;
+//     margin-top: 40px;
+//   }
+//   .content {
+//     background: #ffffff;
+//     padding: 24px;
+
+//     .text-label {
+//       font-family: "OpenSans Bold";
+//       color: #000000;
+//     }
+//     .info-row {
+//       padding: 12px 0;
+//       margin-bottom: 0;
+//       .ant-form-item-label {
+//         text-align: left;
+//         label {
+//           font-family: "OpenSans Regular" !important;
+//         }
+//       }
+//       .ant-form-item-label > label::after {
+//         content: "";
+//       }
+//     }
+//     .link-page {
+//       text-decoration: underline;
+//     }
+//     .my-point {
+//       width: 79px;
+//     }
+
+//     .text-max-point {
+//       text-align: center;
+//       margin-right: 15px;
+
+//       &.ant-form-item {
+//         margin-right: 0px;
+
+//         .ant-form-item-control-input-content {
+//           margin-right: 15px;
+//         }
+//       }
+//     }
+
+//     .max-point {
+//       padding-left: 35px !important;
+//     }
+//     .note {
+//       flex-direction: column;
+//       .ant-form-item-label {
+//         text-align: left;
+//         font-family: "OpenSans Bold";
+//       }
+//       .ant-form-item-control {
+//         max-width: 100%;
+//       }
+//     }
+//   }
+
+//   .candidate {
+//     .ant-form-item-control-input-content {
+//       .ant-form-item {
+//         display: inline-block;
+//       }
+//       .ant-form-item:nth-child(1) {
+//         width: 23%;
+//       }
+//       .ant-form-item:nth-child(2) {
+//         width: 22.5%;
+//       }
+//       .ant-form-item:nth-child(3) {
+//         width: 54.5%;
+//       }
+//     }
+//   }
+
+//   .comment {
+//     padding-left: 24px;
+//     margin-top: 24px;
+//     .ant-card-bordered {
+//       height: 100%;
+//     }
+//   }
+
+//   .interviewer {
+//     .ant-form-item-control-input-content {
+//       .ant-form-item {
+//         display: inline-block;
+//       }
+//       .ant-form-item:nth-child(1) {
+//         width: 17.5%;
+//       }
+//       .ant-form-item:nth-child(2),
+//       .ant-form-item:nth-child(3),
+//       .ant-form-item:nth-child(4),
+//       .ant-form-item:nth-child(5) {
+//         width: 17%;
+//       }
+//     }
+//     .interview-container {
+//       .interviewer {
+//         color: white;
+//         text-align: center;
+//         text-decoration: none;
+//       }
+//     }
+//   }
+
+//   .candidates {
+//     .ant-form-item-control-input-content {
+//       .ant-form-item {
+//         display: inline-block;
+//       }
+//       .ant-form-item:nth-child(1) {
+//         width: 17.5%;
+//       }
+//       .ant-form-item:nth-child(2),
+//       .ant-form-item:nth-child(3),
+//       .ant-form-item:nth-child(4) {
+//         width: 17%;
+//       }
+//       .ant-form-item:nth-child(5) {
+//         width: 31%;
+//       }
+//     }
+//   }
+
+//   .footer-actions {
+//     background: #ffffff;
+//     padding: 24px;
+//     text-align: right;
+//     margin: 40px -48px -48px;
+//   }
+
+//   .pass-icon {
+//     font-size: 32px;
+//     cursor: pointer;
+//   }
+
+//   .green {
+//     color: #67c365;
+//   }
+//   .grey {
+//     color: #a7a7a7;
+//   }
+// }
+
+.reference-form {
+  margin-bottom: 20px;
+}
+
+
+
+.breadcrumb {
+  height: 42px;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.ant-input-number-input {
+  height: 38px !important;
+}

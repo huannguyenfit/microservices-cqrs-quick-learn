@@ -1,0 +1,44 @@
+/*Custom ant design*/
+
+$primaryColor: #00cdf2 !default;
+$secondaryColor: #7a7774 !default;
+$tertiaryColor: #2b2b2b !default;
+$quaternaryColor: #67c465 !default;
+$quinaryColor: #4c75df !default;
+$senaryColor: #f0723c !default;
+
+$theme-colors: (
+    "primary":    $primaryColor,
+    "danger":     $primaryColor,
+    "success":    $quaternaryColor,
+    "info":       $quinaryColor,
+    "warning":    $senaryColor,
+    "gray":       $secondaryColor,
+);
+
+$primaryHoverColor: rgb(106, 220, 251) !default;
+$grayColor: #646464 !default;
+$accentColor: #3e3f8f !default;
+$lineColor: #d5d5d5 !default;
+$textColor: #303030;
+$secondaryTextColor: #969696;
+$blueColor: #547ebd;
+$lightGreyColor: #e6e6e6;
+$orangeBackGround: #fffaf8;
+$borderColor: #d9d3d3;
+$textWhiteColor: #f6f6f6;
+$greenColor: #67c365;
+$whiteBackground: #ffffff;
+$redColor: #e3253c;
+$grayBackgroud: #e5e5e5 !default;
+$lighterBlackColor: #5F5F5F;
+$black: #000000;
+
+$headlineFont: "OpenSans";
+$subheadFont: "OpenSans";
+$textFont: "OpenSans Regular";
+$titleFont: "OpenSans SemiBold";
+$fontBold: "OpenSans Bold";
+
+$primaryFont: "OpenSans Regular" !default;
+

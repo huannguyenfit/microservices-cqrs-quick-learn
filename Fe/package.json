@@ -1,0 +1,73 @@
+{
+  "name": "huan_step_test",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/jquery": "^3.5.1",
+    "@types/node": "^12.0.0",
+    "@types/react": "18.0.8",
+    "@types/react-cookies": "0.1.0",
+    "@types/react-dom": "18.0.6",
+    "@types/react-redux": "^7.1.16",
+    "antd": "^4.16.2",
+    "axios": "^0.21.1",
+    "classnames": "^2.2.6",
+    "env-cmd": "^10.1.0",
+    "http-status-codes": "^2.1.4",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "qrcode.react": "^1.0.1",
+    "qs": "^6.9.6",
+    "react": "^18.2.0",
+    "react-cookies": "^0.1.1",
+    "react-dom": "^18.2.0",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "6.3",
+    "react-toastify": "^7.0.3",
+    "rxjs": "^6.6.3",
+    "sass": "^1.51.0",
+    "typescript": "4.8.2",
+    "xlsx": "^0.18.5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.11",
+    "@types/file-saver": "^2.0.3",
+    "@types/lodash": "^4.14.171",
+    "@types/qs": "^6.9.5",
+    "@types/react-beautiful-dnd": "^13.1.1",
+    "@types/react-router": "^5.1.11",
+    "@types/react-router-dom": "^5.1.7",
+    "@vitejs/plugin-react": "^4.0.0",
+    "css-loader": "^5.2.4",
+    "vite": "^4.3.9",
+    "vite-plugin-svgr": "^3.2.0",
+    "vite-tsconfig-paths": "^4.2.0"
+  }
+}

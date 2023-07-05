@@ -1,0 +1,134 @@
+@import "../../../App.scss";
+
+.home-page {
+	margin-bottom: 41px;
+	.welcome {
+		margin: 32px 0px 24px;
+		font-size: 16px;
+
+		h1 {
+			font-size: 24px;
+			font-weight: 700;
+		}
+	}
+	.content {
+		.box-name {
+			color: $quinaryColor;
+			padding-bottom: 12px;
+			border-bottom: 1px solid $borderColor;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: relative;
+			margin-bottom: 24px;
+			button {
+				font-weight: normal;
+				position: absolute;
+				top: -12px;
+				right: 0;
+			}
+		}
+
+		button {
+			font-size: 12px;
+			padding: 4px 12px;
+			margin-left: 8px;
+			border-radius: 4px;
+			height: 32px;
+
+			img {
+				margin-right: 4px;
+			}
+
+			&.default {
+				border: 1px solid $borderColor !important;
+				color: $quinaryColor !important;
+				background-color: transparent !important;
+			}
+		}
+
+		.tasks-box {
+			.tasks:not(:last-child) {
+				margin: 24px 0px 41px;
+			}
+
+			.tasks {
+				margin: 24px 0px 0px;
+
+				.task-title {
+					display: flex;
+					align-items: center;
+					margin-bottom: 16px;
+					font-family: $fontBold;
+
+					.vertical-line {
+						height: 21px;
+						width: 3px;
+						min-width: 3px;
+						background-color: $primaryColor;
+						border-radius: 60px;
+						margin-right: 8px;
+					}
+
+					.total {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 11px;
+						width: 21px;
+						height: 21px;
+						margin-left: 8px;
+						border-radius: 50%;
+						color: $primaryColor;
+						background-color: #efe9ea;
+					}
+				}
+
+				.out-off-task {
+					font-size: 12px;
+					color: $secondaryColor;
+					display: flex;
+					align-items: center;
+
+					svg {
+						width: 16px;
+						height: 16px;
+						color: $quaternaryColor;
+						margin-right: 8px;
+					}
+				}
+			}
+
+			.tasks.priority {
+				.vertical-line {
+					background-color: $greenColor;
+				}
+
+				.total {
+					color: $quaternaryColor;
+					background-color: #d5eed4;
+				}
+
+				button.red {
+					background-color: $senaryColor;
+					border: none;
+				}
+
+				.ant-checkbox:hover {
+					border-color: $quaternaryColor;
+				}
+
+				.ant-checkbox-checked .ant-checkbox-inner {
+					background-color: $quaternaryColor;
+					border-color: $quaternaryColor;
+				}
+			}
+		}
+
+		.allInfo {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}

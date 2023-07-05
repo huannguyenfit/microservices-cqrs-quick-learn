@@ -1,0 +1,232 @@
+.customer-create {
+  .page-content {
+    padding-bottom: 75px;
+    max-width: 1254px;
+    margin: 20px auto;
+
+    .title {
+      font-size: 24px;
+      line-height: 32px;
+      font-family: 'OpenSans Bold';
+      margin: 16px 0;
+      color: #2b2b2b;
+    }
+
+    .create-edit-form {
+      padding: 20px 20px 20px 20px;
+      background: white;
+      position: relative;
+
+      .form-section {
+        .expense-form-input {
+          border: 1px solid #d9d3d3;
+          border-radius: 4px;
+        }
+
+        .expense-form-label {
+          width: 100%;
+          padding-left: 8px;
+        }
+
+        .section-header {
+          display: flex;
+          flex: 1;
+          justify-content: space-between;
+          width: 100%;
+          align-items: center;
+          padding-bottom: 8px;
+          border-bottom: 1px solid #e6e6e6;
+          margin-bottom: 20px;
+
+          .section-title {
+            font-family: 'OpenSans Regular';
+            font-size: 16px;
+            line-height: 22px;
+            align-items: center;
+            color: #7a7774;
+          }
+
+          .btn-add {
+            font-family: 'OpenSans Bold';
+            font-size: 14px;
+            line-height: 24px;
+            color: #e3253c;
+          }
+        }
+      }
+
+      .form-list {
+        .form-list-action {
+          display: flex;
+          flex: 1;
+          flex-direction: row;
+          align-items: center;
+          height: 100%;
+        }
+      }
+
+      .ant-form-item-has-error .ant-input-disabled {
+        border-color: #ff4d4f;
+      }
+
+      .table-estimate {
+        padding: 13px 24px;
+        border: 1px solid #d9d3d3;
+        box-sizing: border-box;
+        border-radius: 4px;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+          width: 8px;
+          height: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 4px rgba(#001529, 0.3);
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: rgba(#001529, 0.6);
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+          background: rgba(#001529, 0.8);
+        }
+
+        .total-label {
+          padding: 16px 16px;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            font-family: 'OpenSans Bold';
+            font-size: 14px;
+            line-height: 24px;
+            align-items: center;
+            text-align: right;
+            color: #2b2b2b;
+          }
+        }
+
+        .total-value {
+          padding: 16px 16px;
+          align-items: center;
+          text-align: start;
+
+          span {
+            font-family: 'OpenSans Bold';
+            font-size: 14px;
+            line-height: 24px;
+            align-items: center;
+            color: #2b2b2b;
+          }
+        }
+      }
+
+      .table-expense {
+        padding: 13px 24px;
+        border: 1px solid #d9d3d3;
+        box-sizing: border-box;
+        border-radius: 4px;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+          width: 8px;
+          height: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 4px rgba(#001529, 0.3);
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: rgba(#001529, 0.6);
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+          background: rgba(#001529, 0.8);
+        }
+
+        .has-border {
+          border-top: 1px solid #e6e6e6;
+        }
+
+        .total-label {
+          padding: 16px 16px;
+          width: 73%;
+          align-items: center;
+
+          span {
+            font-family: 'OpenSans Bold';
+            font-size: 14px;
+            line-height: 24px;
+            align-items: center;
+            text-align: right;
+            color: #2b2b2b;
+          }
+        }
+
+        .total-value {
+          padding: 16px 16px;
+          align-items: center;
+          text-align: start;
+          width: 27%;
+
+          span {
+            font-family: 'OpenSans Bold';
+            font-size: 14px;
+            line-height: 24px;
+            align-items: start;
+            color: #2b2b2b;
+          }
+        }
+      }
+
+      .ant-form-item-label {
+        label {
+          display: flex;
+          flex: 1;
+
+          .label-add {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .add-new {
+              .btn-add {
+                font-family: 'OpenSans Bold';
+                font-size: 14px;
+                line-height: 24px;
+                color: #e3253c;
+              }
+            }
+          }
+        }
+      }
+
+      .ant-input-number {
+        width: 100%;
+      }
+
+      .input-value-item {
+        .ant-form-item {
+          margin-bottom: 10px;
+        }
+
+        .delete {
+          display: flex;
+          justify-content: center;
+          min-height: 100px;
+
+          i {
+            margin-bottom: 33.5px !important;
+          }
+        }
+      }
+    }
+  }
+
+
+}

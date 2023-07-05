@@ -1,0 +1,28 @@
+.login-form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 40px;
+
+  .forgot-password {
+    color: #f64c72;
+    text-decoration: none;
+  }
+
+  .content {
+    width: 400px;
+  }
+
+  .login-title {
+    margin-bottom: 50px;
+  }
+
+  .copy-rights {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+  }
+}

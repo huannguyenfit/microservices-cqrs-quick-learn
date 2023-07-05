@@ -1,0 +1,59 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ApiGateway",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "apigateway_build",
+      "program": "${workspaceFolder}/Test.ApiGateway/bin/Debug/net6.0/ApiGateway.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Test.ApiGateway",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+
+    {
+      "name": "OrderApi",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "order_build",
+      "program": "${workspaceFolder}/Test.Orders/bin/Debug/net6.0/Test.OrderAPI.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Test.Orders",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "StoreApi",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "store_build",
+      "program": "${workspaceFolder}/Test.Stores/bin/Debug/net6.0/StoreAPI.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Test.Stores",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "CustomerApi",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "customerApi_build",
+      "program": "${workspaceFolder}/Test.Customer/bin/Debug/net6.0/Test.CustomerAPI.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Test.Customer",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "runAll",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "runCombine",
+    }
+  ]
+}

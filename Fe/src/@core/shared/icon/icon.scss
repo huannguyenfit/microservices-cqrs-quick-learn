@@ -1,0 +1,21 @@
+svg.icon {
+  margin-right: 10px;
+
+  &.red {
+    path {
+      fill: $primaryColor !important;
+    }
+  }
+
+  &.green {
+    path {
+      fill: $quaternaryColor !important;
+    }
+  }
+
+  &.blue {
+    path {
+      fill: $quinaryColor !important;
+    }
+  }
+}
