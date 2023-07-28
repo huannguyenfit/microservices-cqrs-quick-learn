@@ -18,4 +18,6 @@ API
 
 .Net 6
 
+CQRS Pattern
+
 Config routing from ocelot.config.
