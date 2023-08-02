@@ -52,8 +52,8 @@
     {
       "label": "runCombine",
       "dependsOn": [
-        "customerApi_build",
         "apigateway_build",
+        "customerApi_build",
         "store_build",
         "order_build"
       ]

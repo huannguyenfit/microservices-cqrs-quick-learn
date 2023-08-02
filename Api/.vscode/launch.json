@@ -32,7 +32,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "store_build",
-      "program": "${workspaceFolder}/Test.Stores/bin/Debug/net6.0/StoreAPI.dll",
+      "program": "${workspaceFolder}/Test.Stores/bin/Debug/net6.0/Test.StoreAPI.dll",
       "args": [],
       "cwd": "${workspaceFolder}/Test.Stores",
       "console": "internalConsole",

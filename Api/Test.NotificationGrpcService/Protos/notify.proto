@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace = "Test.NotificationGrpcService";
+
+service NotificationGrpcService {
+	rpc SendNotifyCustomer (OrderCreatedRequest) returns (OrderCreatedResponse);
+}
+
+message OrderCreatedRequest {
+	string productName = 1;	
+	string email = 2;	
+}
+
+message OrderCreatedResponse {
+	bool success = 1;
+}

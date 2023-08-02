@@ -28,6 +28,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseAuthorization();
 
-app.MapControllers();
+//app.MapControllers();
+
+// Configure the HTTP request pipeline.
 
 app.Run();
