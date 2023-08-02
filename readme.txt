@@ -6,7 +6,7 @@ valid Node 14.18.3.
 
 config api endpoint at env.development.
 
-use Vite intead of CRA.
+use Vite instead of CRA.
 
 
 
