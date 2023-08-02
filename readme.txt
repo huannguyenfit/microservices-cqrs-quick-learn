@@ -20,4 +20,6 @@ API
 
 CQRS Pattern
 
+gRPC
+
 Config routing from ocelot.config.
